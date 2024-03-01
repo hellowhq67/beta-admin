@@ -14,7 +14,7 @@ const nextConfig = {
       }
        {
         // matching all API routes
-        source: "/api/products/*",
+        source: "/api/products/:path*",
         headers: [
           { key: "Access-Control-Allow-Credentials", value: "true" },
           { key: "Access-Control-Allow-Origin", value: "https://beta-admin-two.vercel.app" }, // Set specific origin
