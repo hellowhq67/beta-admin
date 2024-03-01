@@ -17,7 +17,7 @@ const ProductTable = () => {
   const fetchProducts = async () => {
     setLoading(true);
     try {
-      const response = await axios.get('/api/products');
+      const response = await axios.get('https://beta-admin-r3ibi1xkr-hellowhq67.vercel.app/api/products');
       setProducts(response.data.products);
     } catch (error) {
       console.error('Error fetching products:', error);
@@ -29,7 +29,7 @@ const ProductTable = () => {
 
   const handleDelete = async (_id) => {
     try {
-      const res = await axios.delete(`/api/products/${_id}`);
+      const res = await axios.delete(`https://beta-admin-r3ibi1xkr-hellowhq67.vercel.app/api/products/${_id}`);
       if (res.status === 200) {
         setProducts((prevProducts) => prevProducts.filter((product) => product._id !== _id));
         toast.success('Product deleted');
