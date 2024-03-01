@@ -1,0 +1,70 @@
+.formContainer {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #333; /* Dark background color */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  }
+  
+  .formContainer label {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff; /* Text color */
+  }
+  
+  .formContainer input[type="text"],
+  .formContainer textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #555; /* Darker border */
+    border-radius: 5px;
+    background-color: #444; /* Darker background color */
+    color: #fff; /* Text color */
+  }
+  
+  .formContainer input[type="text"]:focus,
+  .formContainer textarea:focus {
+    outline: none;
+    border-color: #9f7aea; /* Accent color */
+  }
+  
+  .formContainer .dropzone {
+    margin-bottom: 20px;
+  }
+  
+  .formContainer .imgs {
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .formContainer button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #9f7aea; /* Accent color */
+    border: none;
+    border-radius: 5px;
+    color: #fff; /* Text color */
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .formContainer button[type="submit"]:hover {
+    background-color: #7d4cdb; /* Darker accent color on hover */
+  }
+  
+  .formContainer .remove-button {
+    display: block;
+    padding: 5px 10px;
+    background-color: #ff3d00; /* Red color */
+    border: none;
+    border-radius: 5px;
+    color: #fff; /* Text color */
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .formContainer .remove-button:hover {
+    background-color: #c62828; /* Darker red color on hover */
+  }

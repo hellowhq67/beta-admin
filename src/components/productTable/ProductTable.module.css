@@ -1,0 +1,59 @@
+/* ProductTable.module.css */
+
+/* Search Container */
+.searchContainer {
+  margin-bottom: 20px;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Product Table */
+.productTable {
+  width: 80vw;
+  border-collapse: collapse;
+  background-color:rgb(0, 0, 0) ;
+}
+
+.productTable th,
+.productTable td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.productTable th {
+  background-color: #232020;
+}
+
+/* Product Image */
+.productImage {
+  max-width: 100px;
+  height: auto;
+}
+
+/* Delete Button */
+.deleteBtn {
+  padding: 8px 16px;
+  background-color: #ff6666;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.deleteBtn:hover {
+  background-color: #ff4d4d;
+}
+
+/* Loading Message */
+.loadingMessage {
+  font-style: italic;
+  color: #666;
+}
