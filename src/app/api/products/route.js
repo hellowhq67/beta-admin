@@ -10,7 +10,7 @@ export async function GET() {
 
     // Set CORS headers with specific origin
     const headers = {
-      'Access-Control-Allow-Origin': 'https://beta-admin-r3ibi1xkr-hellowhq67.vercel.app',
+      'Access-Control-Allow-Origin': 'https://beta-admin-two.vercel.app',
       'Access-Control-Allow-Methods': 'GET, POST, OPTIONS', // Allow GET, POST, and OPTIONS requests
       'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept', // Allow specified headers
     };
@@ -76,7 +76,7 @@ export async function POST(request) {
 
     // Set CORS headers with specific origin
     const headers = {
-      'Access-Control-Allow-Origin': 'https://beta-admin-r3ibi1xkr-hellowhq67.vercel.app',
+      'Access-Control-Allow-Origin': 'https://beta-admin-two.vercel.app',
       'Access-Control-Allow-Methods': 'GET, POST, OPTIONS', // Allow GET, POST, and OPTIONS requests
       'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept', // Allow specified headers
     };
