@@ -8,11 +8,11 @@ export async function GET() {
 
     const products = await Product.find({}); // Retrieve all products from the database
 
-    // Set CORS headers
+    // Set CORS headers with specific origin
     const headers = {
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
-      'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
+      'Access-Control-Allow-Origin': 'https://beta-admin-r3ibi1xkr-hellowhq67.vercel.app',
+      'Access-Control-Allow-Methods': 'GET, POST, OPTIONS', // Allow GET, POST, and OPTIONS requests
+      'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept', // Allow specified headers
     };
 
     return NextResponse.json({ products }, { headers }); // Return the products as JSON response with CORS headers
@@ -74,11 +74,11 @@ export async function POST(request) {
       tag
     });
 
-    // Set CORS headers
+    // Set CORS headers with specific origin
     const headers = {
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
-      'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
+      'Access-Control-Allow-Origin': 'https://beta-admin-r3ibi1xkr-hellowhq67.vercel.app',
+      'Access-Control-Allow-Methods': 'GET, POST, OPTIONS', // Allow GET, POST, and OPTIONS requests
+      'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept', // Allow specified headers
     };
 
     return NextResponse.json({ message: "Product Created", product: newProduct }, { headers, status: 201 });
