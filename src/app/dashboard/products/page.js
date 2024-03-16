@@ -11,7 +11,11 @@ export default function page() {
         <div>
             <Header />
 
-        
+         <div className={style.wrapper} >
+                <AdminSidebar />
+                <ProductTable />
+            </div>
+
 
 
         </div>
