@@ -12,7 +12,7 @@ export default function page() {
             <Header />
 
             <div className={style.wrapper} >
-        <h1> hello</h1>
+
                 <AdminSidebar />
                 <ProductTable />
             </div>
